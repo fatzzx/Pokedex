@@ -1,11 +1,18 @@
 package aplication;
 
+import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import javafx.stage.Stage;
 import pokemon.Pokemon;
 import pokemoncore.Pokedex;
 
@@ -13,8 +20,10 @@ import pokemoncore.Pokedex;
 public class SearchScreenController {
 
 	private Pokedex pokedex = new Pokedex();
+	private Stage stage;
+	private Scene scene;
 	
-	private Integer id;
+	private Integer id = 0;
 	
 	@FXML 
 	private Label error;
@@ -41,28 +50,58 @@ public class SearchScreenController {
 	private Button searchButton;
 	
 	@FXML
+	private Button leftButton;
+	
+	@FXML
+	private Button rightButton;
+	
+	@FXML
+	private Button backButton;
+	
+	@FXML
 	private ImageView pokemonImage;
+	
+    public void switchToMenuScreen(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Menu.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+	
+	public void showsOnScreen() {
+		error.setText(null);
+		Pokemon pokemon = pokedex.searchPokemon(id);
+		if(pokemon != null) {
+			pokemonName.setText("Nome: " + pokemon.getName());
+			pokemonSpecies.setText("Espécie: " + pokemon.getSpecies());
+			pokemonTypes.setText("Tipo: " + pokemon.pokemonTypesString());
+			pokemonWeakess.setText("Fraquezas: " + pokemon.pokemonWeaknessString());
+			pokemonId.setText("Id: " +  String.format("%d", pokemon.getId()));
+			pokemonImage.setImage(pokemon.getImage());
+		}
+	}
 	
 	public void submit(ActionEvent event) {
 		try {
 			id = Integer.parseInt(searchTextField.getText());
-			error.setText(null);
-			Pokemon pokemon = pokedex.pesquisar(id);
-			if(pokemon != null) {
-				pokemonName.setText(pokemon.getName());
-				pokemonSpecies.setText(pokemon.getSpecies());
-				pokemonTypes.setText(pokemon.pokemonTypesString());
-				pokemonWeakess.setText(pokemon.pokemonWeaknessString());
-				pokemonId.setText(String.format("%d", pokemon.getId()));
-				pokemonImage.setImage(pokemon.getImage());
-			}
+			showsOnScreen();
 		}catch(Exception e) {
 			error.setText("Digite um numero");
 		}
-
 	}
 	
+	public void nextPokemon(ActionEvent event) {
+		if(id < pokedex.size()) {
+			id++;
+			showsOnScreen();	
+		}
+	}
 	
-	
-	
+	public void previousPokemon(ActionEvent event) {
+		if(id > 1) {
+			id--;
+			showsOnScreen();			
+		}
+	}
 }

@@ -9,7 +9,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aplication.SearchScreenController">
    <children>
-      <Label layoutX="116.0" layoutY="30.0" text="Digite para buscar um pokemo (id - 00 - 12)">
+      <Label layoutX="116.0" layoutY="30.0" text="Digite para buscar um pokemon pelo ID">
          <font>
             <Font size="19.0" />
          </font>
@@ -17,15 +17,18 @@
       <TextField fx:id="searchTextField" layoutX="226.0" layoutY="71.0" promptText="Digite o ID do Pokemon" />
       <ImageView fx:id="pokemonImage" fitHeight="210.0" fitWidth="235.0" layoutX="66.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true" />
       <Button fx:id="searchButton" layoutX="397.0" layoutY="71.0" mnemonicParsing="false" onAction="#submit" text="Buscar" />
-      <Label fx:id="error" layoutX="14.0" layoutY="68.0" prefHeight="32.0" prefWidth="170.0" textFill="#fc0000">
+      <Label fx:id="error" layoutX="312.0" layoutY="108.0" prefHeight="32.0" prefWidth="170.0" textFill="#fc0000">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label fx:id="pokemonName" layoutX="316.0" layoutY="140.0" prefHeight="25.0" prefWidth="210.0" />
+      <Label fx:id="pokemonName" layoutX="312.0" layoutY="140.0" prefHeight="25.0" prefWidth="210.0" />
       <Label fx:id="pokemonSpecies" layoutX="312.0" layoutY="165.0" prefHeight="25.0" prefWidth="210.0" />
       <Label fx:id="pokemonTypes" layoutX="312.0" layoutY="188.0" prefHeight="25.0" prefWidth="228.0" />
       <Label fx:id="pokemonWeakess" layoutX="312.0" layoutY="213.0" prefHeight="25.0" prefWidth="228.0" />
       <Label fx:id="pokemonId" layoutX="312.0" layoutY="238.0" prefHeight="25.0" prefWidth="85.0" />
+      <Button fx:id="leftButton" layoutX="116.0" layoutY="71.0" mnemonicParsing="false" onAction="#previousPokemon" prefHeight="25.0" prefWidth="30.0" text="&lt;" />
+      <Button fx:id="rightButton" layoutX="154.0" layoutY="71.0" mnemonicParsing="false" onAction="#nextPokemon" prefHeight="25.0" prefWidth="30.0" text="&gt;" />
+      <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToMenuScreen" text="Voltar" />
    </children>
 </AnchorPane>

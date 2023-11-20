@@ -10,7 +10,7 @@ import pokemon.PokemonType;
 public final class Charmander extends Pokemon {
 
     public Charmander() {
-        super("Charmander","Charmander","Pokemon Lagarto", 4,
+        super("Charmander","Charmander","Pokémon Lagarto", 4,
         		new ArrayList<>(Arrays.asList(PokemonType.FOGO)),
         		new ArrayList<>(Arrays.asList(PokemonType.AGUA, PokemonType.TERRA, PokemonType.ELETRICO)),
         		Charmander.class.getResource("/images/Charmander.png").toString());
