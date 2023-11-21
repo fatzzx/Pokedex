@@ -50,9 +50,16 @@ public class Pokedex {
 		return pokedex.size();
 	}
 	
-	public Pokemon searchPokemon(Integer id) {
+	public Pokemon searchPokemonById(Integer id) {
 		for(Pokemon pokemon : pokedex) {
 			if(pokemon.getId() == id) return pokemon;
+		}
+		return null;
+	}
+	
+	public Pokemon searchPokemonByName(String name) {
+		for(Pokemon pokemon : pokedex) {
+			if(pokemon.getName().toLowerCase().contains(name.toLowerCase())) return pokemon;
 		}
 		return null;
 	}

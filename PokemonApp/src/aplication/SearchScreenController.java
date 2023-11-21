@@ -71,7 +71,7 @@ public class SearchScreenController {
 	
 	public void showsOnScreen() {
 		error.setText(null);
-		Pokemon pokemon = pokedex.searchPokemon(id);
+		Pokemon pokemon = pokedex.searchPokemonById(id);
 		if(pokemon != null) {
 			pokemonName.setText("Nome: " + pokemon.getName());
 			pokemonSpecies.setText("Espécie: " + pokemon.getSpecies());
