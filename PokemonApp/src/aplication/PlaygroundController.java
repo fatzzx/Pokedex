@@ -68,6 +68,7 @@ public class PlaygroundController implements Initializable{
                 pokemonInPlayground.add(pokemonImageView);
                 animatePokemon(pokemonImageView);
                 pokemonPane.getChildren().add(pokemonImageView);
+
             }
         }
     }

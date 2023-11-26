@@ -17,9 +17,11 @@ public final class Ivysaur extends Pokemon {
 
     @Override
     public String description() {
-        return "Ivysaur é a evolução de Bulbasaur. A planta nas costas de Bulbasaur cresceu para se tornar uma flor maior e mais impressionante em Ivysaur."
-                + "\n"
-                + "Esta evolução mantém os tipos de Grama e Veneno, combinando ataques poderosos desses elementos. A planta continua a crescer à medida que Ivysaur evolui para Venusaur.";
+        return "Ivysaur é a evolução de Bulbasaur. A planta\nnas costas de Bulbasaur cresceu\n"
+        		+ "para se tornar uma flor maior\n e mais impressionante em Ivysaur. Esta evolução\n"
+        		+ "mantém os tipos de Grama e Veneno, combinando ataques poderosos desses\n"
+        		+ "elementos. A planta continua a crescer à medida que Ivysaur evolui para Venusaur.";
     }
+
 
 }

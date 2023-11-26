@@ -17,9 +17,11 @@ public final class Venusaur extends Pokemon {
 
     @Override
     public String description() {
-        return "Venusaur é a forma final de evolução da linha Bulbasaur. A flor em suas costas floresceu completamente, tornando-se uma presença imponente e poderosa."
-                + "\n"
-                + "Este Pokémon mantém os tipos de Grama e Veneno e possui ataques poderosos associados a esses elementos. Venusaur é respeitado por sua força e beleza natural.";
+        return "Venusaur é a forma final de evolução da linha Bulbasaur. A flor em suas costas\n"
+        		+ "floresceu completamente, tornando-se uma presença imponente e poderosa. Este\n"
+        		+ "Pokémon mantém os tipos de Grama e Veneno e possui ataques poderosos associados\n"
+        		+ "a esses elementos. Venusaur é respeitado por sua força e beleza natural.";
     }
+
 
 }

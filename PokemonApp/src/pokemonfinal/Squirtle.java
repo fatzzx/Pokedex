@@ -17,9 +17,12 @@ public final class Squirtle extends Pokemon {
 
     @Override
     public String description() {
-        return "Squirtle é um Pokémon aquático com características de tartaruga. Ele é conhecido por sua concha robusta e sua habilidade de disparar jatos d'água contra seus adversários."
-                + "\n"
-                + "Este Pokémon de tipo Água é uma escolha popular entre os treinadores. Squirtle evolui para Wartortle e, eventualmente, para Blastoise, aumentando seu poder e habilidades aquáticas.";
+        return "Squirtle é um Pokémon aquático com características de tartaruga. Ele é conhecido\n"
+        		+ "por sua concha robusta e sua habilidade de disparar jatos d'água contra seus\n"
+        		+ "adversários. Este Pokémon de tipo Água é uma escolha popular entre os\n"
+        		+ "treinadores. Squirtle evolui para Wartortle e, eventualmente, para Blastoise,\n"
+        		+ "aumentando seu poder e habilidades aquáticas.";
     }
+
 
 }

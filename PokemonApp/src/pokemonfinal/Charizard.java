@@ -17,9 +17,12 @@ public final class Charizard extends Pokemon {
 
     @Override
     public String description() {
-        return "Charizard é a forma final de evolução da linha Charmander. Este majestoso Pokémon é conhecido por sua chama que queima com uma intensidade incrível, indicando sua força e poder."
-                + "\n"
-                + "Com asas poderosas, Charizard é capaz de voar pelos céus. Ele é um Pokémon de Fogo e Voador, tornando-o ainda mais versátil em batalhas. Charizard é respeitado por sua incrível força e presença imponente.";
+        return "Charizard é a forma final de evolução da linha Charmander. Este majestoso\n"
+        		+ "Pokémon é conhecido por sua chama que queima com uma intensidade incrível,\n"
+        		+ "indicando sua força e poder. Com asas poderosas, Charizard é capaz de voar pelos\n"
+        		+ "céus. Ele é um Pokémon de Fogo e Voador, tornando-o ainda mais versátil em\n"
+        		+ "batalhas. Charizard é respeitado por sua incrível força e presença imponente.";
     }
+
 
 }

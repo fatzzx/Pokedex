@@ -17,9 +17,11 @@ public final class Wartortle extends Pokemon {
 
     @Override
     public String description() {
-        return "Wartortle é a evolução de Squirtle. Sua concha tornou-se mais resistente, proporcionando uma melhor defesa. Wartortle mantém suas habilidades aquáticas e sua natureza de tartaruga."
-                + "\n"
-                + "Este Pokémon de tipo Água continua a se fortalecer e se desenvolver. Wartortle é o estágio intermediário na evolução para o poderoso Blastoise.";
+        return "Wartortle é a evolução de Squirtle.\nSua concha tornou-se mais resistente,\n"
+        		+ "proporcionando uma melhor defesa. Wartortle mantém suas habilidades aquáticas\n"
+        		+ "e sua natureza de tartaruga. Este Pokémon de tipo Água continua a se fortalecer\n"
+        		+ "e se desenvolver. Wartortle é o estágio intermediário na evolução para o\n"
+        		+ "poderoso Blastoise.";
     }
 
 }

@@ -84,7 +84,8 @@ public class SearchScreenController {
 	
 	public void submit(ActionEvent event) {
 		try {
-			id = Integer.parseInt(searchTextField.getText());
+			Integer aux = Integer.parseInt(searchTextField.getText());
+			if(aux > 0 && aux < pokedex.size()) id = aux;
 			showsOnScreen();
 		}catch(Exception e) {
 			error.setText("Digite um numero");

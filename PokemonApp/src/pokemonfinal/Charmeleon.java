@@ -17,9 +17,12 @@ public final class Charmeleon extends Pokemon {
 
     @Override
     public String description() {
-        return "Charmeleon é a evolução de Charmander. Este Pokémon já está começando a mostrar sua natureza feroz. Sua chama queima mais intensamente, indicando um aumento em seu poder interno."
-                + "\n"
-                + "Seus chifres afiados e atitude mais agressiva tornam-no um adversário mais formidável. Charmeleon é um estágio intermediário na evolução para o poderoso Charizard.";
+        return "Charmeleon é a evolução de Charmander. Este Pokémon já está começando a\n"
+        		+ "mostrar sua natureza feroz. Sua chama queima mais intensamente, indicando um\n"
+        		+ "aumento em seu poder interno. Seus chifres afiados e atitude mais agressiva\n"
+        		+ "tornam-no um adversário mais formidável. Charmeleon é um estágio intermediário\n"
+        		+ "na evolução para o poderoso Charizard.";
     }
+
 
 }

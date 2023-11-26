@@ -17,8 +17,11 @@ public final class Blastoise extends Pokemon {
 
     @Override
     public String description() {
-        return "Blastoise é a forma final de evolução da linha Squirtle. Sua concha agora se transformou em canhões de água poderosos, tornando-o uma força a ser reconhecida."
-                + "\n"
-                + "Este Pokémon de tipo Água é respeitado por sua incrível potência de ataque e defesa. Blastoise é capaz de disparar jatos d'água com força suficiente para derrubar construções";
-        }
+        return "Blastoise é a forma final de evolução da linha Squirtle. Sua concha agora\n"
+        		+ "se transformou em canhões de água poderosos, tornando-o uma força a ser\n"
+        		+ "reconhecida. Este Pokémon de tipo Água é respeitado por sua incrível potência\n"
+        		+ "de ataque e defesa. Blastoise é capaz de disparar jatos d'água com força\n"
+        		+ "suficiente para derrubar construções.";
+    }
+
 }

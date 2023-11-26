@@ -17,9 +17,14 @@ public final class Bulbasaur extends Pokemon {
 
     @Override
     public String description() {
-        return "Bulbasaur é um Pokémon quadrúpede com uma semente planta crescendo em suas costas. Essa semente se desenvolverá em uma planta forte à medida que Bulbasaur evolui."
-                + "\n"
-                + "Este Pokémon é uma escolha popular entre treinadores, pois combina as características de Grama e Veneno. A semente nas suas costas cresce à medida que ele evolui para Ivysaur e, eventualmente, para Venusaur.";
+        return "Bulbasaur é um Pokémon quadrúpede\n"
+        		+ "com uma semente planta em suas costas. A semente\n"
+        		+ "se desenvolve em uma planta forte conforme\n"
+        		+ "Bulbasaur evolui. Este Pokémon, combinando\n"
+        		+ "as características de Grama e Veneno, é popular\n"
+        		+ "entre treinadores. A semente cresce ao evoluir\n"
+        		+ "para Ivysaur e, eventualmente, Venusaur.";
     }
+
 
 }
